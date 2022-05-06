@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Cafe24SsurroundAir';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+html{overflow: hidden;}
+
+html, body{width: 100%; height: 100%;}
+
+nav{
+  margin-bottom: 80px;
+}
+#logo {
+  margin-left: 30px;
+  position :fixed;
+  z-index: 1;
+  font-family: 'Gruppo', cursive !important;
+}
+#logo a{
+  font-size: 3em;
+  color:#005792;
+}
+#logo a:hover{
+  text-shadow: 3px 2px 3px rgba(0, 87, 146, .3);
+}
+.wrapper{
+  margin: 0 30px;
+}
+.wrapper h1{
+  color: #85abc5;
+  text-align: center;
+  margin: 20px 0;
+}
+.login-form-wrapper {
+  margin-top: 50px;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+}
+.login-form-wrapper * {
+  box-sizing: border-box;
+}
+input{
+  outline: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+}
+.login-form-wrapper input[type="text"],
+.login-form-wrapper input[type="password"]{
+  margin: 10px;
+  width: 50%;
+  border: #ebebeb 1px solid;
+  border-radius: 10px;
+  padding: 0px 10px;
+  font-size: 17px;
+  height: 39px;
+  line-height: 39px;
+}
+.login-btn{
+  cursor: pointer;
+    background: #85abc5;
+    width: 50%;
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+    border: 0;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+.login-btn:hover{
+  box-shadow: 0px 2px 5px #a5a5a5;
+  background-color: #6287a0;
+}
+.member-nav{
+  margin-top: 30px;
+}
+.member-nav li{
+  width: 17%;
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+}
+.member-nav li ~ li{
+  border-left: #cfcfcf 1px solid;
+}
+.member-nav li a{
+  text-decoration: none;
+  color: #191919;
+  transition: all 0.15s ease-in-out;
+  box-sizing: border-box !important;
+}
+.member-nav li a:hover {
+  color: #a5a5a5;
+}
+.member-nav li {
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  box-sizing: border-box !important;
+}
+.member-nav li:hover {
+  color: #a5a5a5;
+}
+
+
+

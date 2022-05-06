@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/find_pwd.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>find_pwd</title>
+</head>
+<body>
+  <form action="" id="findFrm">
+    <h2>비밀번호 찾기</h2>
+    <input type="text" id="searchId" class="inputInfo" placeholder="가입한 아이디를 입력하세요.">
+    <input type="text" id="searchMobile" class="inputInfo" placeholder="가입한 핸드폰번호를 입력하세요.">
+    <br>
+    <button id="btnSearchPwd">조회</button>
+  </form>
+  <script>
+  btnSearchPwd.addEventListener('click', (e) => {
+    const members = JSON.parse(localStorage.getItem('members')) || [];
+    const idVal = document.querySelector('#searchId').value;
+    const mobileVal = document.querySelector('#searchMobile').value;
+    for (let i = 0; i < members.length; i++) {
+      if (members[i].memberId == idVal && members[i].mobile == mobileVal) {
+        alert(`가입하신 비밀번호는 [${members[i].memberPwd}]입니다.`);
+      }
+      else {
+        alert('가입 내역이 없습니다.');
+        return;
+      }
+    }
+  });
+  </script>
+</body>
+</html>

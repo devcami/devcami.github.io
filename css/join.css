@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'Cafe24SsurroundAir';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 전체 */
+img{
+  border: none;
+}
+
+body{
+  font-family: 'Nanum Gothic',sans-serif;
+}
+
+/* 헤더 */
+nav{
+  margin-bottom: 80px;
+}
+#logo {
+  margin-left: 30px;
+  position :absolute;
+  z-index: 1;
+  font-family: 'Gruppo', cursive !important;
+}
+#logo a{
+  font-size: 3em;
+  color:#005792;
+}
+#logo a:hover{
+  text-shadow: 3px 2px 3px rgba(0, 87, 146, .3);
+}
+
+/* 본문 */
+.wrapper{
+  margin: 0 30px;
+}
+.wrapper h1{
+  font-family: 'Cafe24SsurroundAir', sans-serif;
+  color: #85abc5;
+  text-align: center;
+  margin: 20px 0;
+}
+.wrapper form{
+  padding: 0 50px;
+}
+
+[name=memberFrm]>h3{
+  padding: 50px 0 10px;
+  font-size: 16px;
+  display: block;
+  font-weight: bold;
+}
+[name=memberFrm] p{
+  position:relative;
+  bottom: 28px;
+  left: 80px;
+  color: #353535;
+  text-align: left;
+}
+img{
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+}
+
+table{
+  width: 90%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+th, td{
+  border: 0;
+  vertical-align: top;
+}
+.join-table table{
+  position : relative;
+  border-bottom: 1px solid #dfdfdf;
+  border-top: 0;
+  /* color: #fff; */
+  line-height: 1.5;
+}
+.join-table th:first-child{
+  border-left: 0;
+}
+.join-table tbody th{
+  padding: 12px 0 12px 18px;
+  border: 1px solid #dfdfdf;
+  border-bottom-width: 0;
+  color: #353535;
+  text-align: left;
+  font-weight: normal;
+  background-color: #fff;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.join-table img{
+  vertical-align: middle;
+  max-width: 100% !important;
+  height: auto !important;
+}
+.join-table td{
+  padding: 8px 10px 7px;
+  border-top: 1px solid #dfdfdf;
+  color: #353535;
+  vertical-align: middle;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+input, select{
+  font-size: 100%;
+  font-family: 'Open Sans', 'Nanum Gothic', sans-serif;
+  color: #353535;
+  vertical-align: middle;
+  outline: none;
+}
+select{
+  display: inline-block;
+  min-width: 100px;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 0 0 5px;
+  color: #333;
+  border: 1px #d5d5d5 solid;
+  background-color: #fff;
+  text-indent: 0.01px;
+  vertical-align: middle !important;
+}
+input[type=text], input[type=password], input[type=email]{
+  height: 22px;
+  line-height: 22px;
+  padding: 2px 4px;
+  border: 1px solid #d5d5d5;
+  color: #353535;
+  font-size: 16px;
+}
+s#mobile1{
+  width: 60px;
+  margin: 0 4px 0 0;
+}
+#mobile2,#mobile3{
+  width: 50px;
+  margin: 0 4px;
+}
+#email{
+  margin-right: 4px;
+}
+.btnJoin{
+  padding: 20px 0;
+  text-align: center;
+}
+#btnJoinSubmit:hover{
+  box-shadow: 0 2px 5px #d5d5d5;
+  cursor: pointer;
+}
+#btnJoinSubmit{
+  width: 160px;
+  word-break: keep-all;
+  word-wrap: break-word;
+  padding: 12px 16px;
+  font-size: 18px;
+  font-weight: normal;
+  display: inline-block;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+  background-color: #85abc5;
+  white-space: nowrap;
+  word-spacing: -0.5px;
+  border: none;
+}

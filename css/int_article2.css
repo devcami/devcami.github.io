@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Cafe24SsurroundAir';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,p,h1,h2,h3,h4,dl,dt,dd{
+	margin: 0;
+	padding: 0;
+  background-color: #cbb47d;
+}
+body{
+	font-family: 'Cafe24SsurroundAir', sans-serif;
+	color: #333;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+header{
+  background-color:#fff;
+}
+#logo a{
+  margin-left: 20px;
+  float: left;
+  font-size: 1.5em;
+  color:#cbb47d;
+}
+#logo #toCenter{
+  font-size: 1.3em;
+  color:#cbb47d;
+}
+#logo #toCenter:hover{
+  color:#c09737;
+}
+#logo a:hover{
+  color:#c09737;
+  text-shadow: 2px 2px 3px rgba(201, 201, 201, 0.5);
+}
+
+/* section자리잡기 */
+#top-sec{
+  vertical-align: middle;
+  position: relative;
+  margin: 7% 5% 3% 5%;
+}
+#mid-sec{
+  text-align: right;
+  vertical-align: middle;
+  position: relative;
+  margin: 0 5% 0 5%;
+}
+#bottom-sec{
+  vertical-align: middle;
+  position: relative;
+  margin: 5% 5% 0 5%;
+}
+/* 위쪽 */
+.img-left img{
+  margin-bottom: 30px;
+  width: 35%;
+  border-radius: 10%;
+  opacity: 0.8;
+  box-shadow: 3px 3px 10px rgb(98, 98, 98);
+}
+article{
+  color: #fff;
+}
+article p {
+  font-size: 20px;
+  line-height: 50px;
+}
+article .que{
+  color: rgb(158, 96, 134);
+  font-weight: bold;
+}
+#art-right{
+  padding-top: 50px;
+  float: right;
+  font-size: 25px;
+}
+
+/* 아래쪽 */
+.img-right img{
+  width: 40%;
+  border-radius: 10%;
+  opacity: 0.8;
+  box-shadow: 3px 3px 10px rgb(98, 98, 98);
+}
+#art-left{
+  font-size: 25px;
+  float: left;
+}
+#last-img{
+  width: 50%;
+}
+
+footer{
+  height: 50px;
+}

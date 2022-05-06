@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/login.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/login.js" defer></script>
+  <script src="js/prefixfree.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div>
+    <header>
+      <div class="header">
+        <button>로그인<a href="login.html" class="wave"></a></button>
+        <button>회원가입<a href="join.html" class="wave"></a></button>
+      </div>
+      <nav>
+        <!-- 고정 -->
+        <div id="logo">
+          <a href="main.html"; id="tomain">Lee Eun Min</a>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <div class="wrapper">
+    <hr>
+    <h1>LOGIN</h1>
+    <hr>
+
+    <div class="login-form-wrapper">
+      <form id="member_login" action="javascript:completeLogin();">
+        <input type="text" id="memberId" name="memberId" fw-filter="isFill" fw-label="아이디" class="inputTypeText" placeholder="아이디">
+        <input type="password" id="memberPwd" name="memberPwd" fw-filter="isFill&isMin[4]&isMax[16]" fw-label="패스워드" fw-msg autocomplete="off" placeholder="비밀번호">
+        <br>
+        <button class="login-btn" id="btnLogin">로그인</button>
+        <ul class="member-nav">
+          <li id="find_id">아이디 찾기</li>
+          <li id="find_pwd">비밀번호 찾기</li>
+          <li><a href="join.html">회원가입</a></li>
+        </ul>
+      </form>
+  </div>
+  
+  <script>
+  //아이디찾기 창 팝업띄우기
+  find_id.onclick = () => {
+    const popupWidth = 500;
+    const popupHeigth = 400;
+    const left = screen.availLeft + (screen.availWidth - popupWidth) / 2;
+    const top = screen.availTop + (screen.availHeight - popupHeigth) / 2;
+
+    const newWindow = open("find_id.html", "popup", `width=${popupWidth}, height=${popupHeigth}, left=${left}, top=${top}`)
+  };
+  //비밀번호찾기 창 팝업띄우기
+  find_pwd.onclick = () => {
+    const popupWidth = 500;
+    const popupHeigth = 600;
+    const left = screen.availLeft + (screen.availWidth - popupWidth) / 2;
+    const top = screen.availTop + (screen.availHeight - popupHeigth) / 2;
+  
+    const newWindow = open("find_pwd.html", "popup", `width=${popupWidth}, height=${popupHeigth}, left=${left}, top=${top}`)
+  }
+  </script>
+</body>

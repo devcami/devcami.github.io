@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>join</title>
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/join.css">
+  <script src="js/prefixfree.js"></script>
+  <script type="text/javascript" src="js/join.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div>
+    <header>
+      <div class="header">
+        <button>로그인<a href="login.html" class="wave"></a></button>
+        <button>회원가입<a href="join.html" class="wave"></a></button>
+      </div>
+      <nav>
+          <!-- 고정 -->
+          <div id="logo">
+              <a href="main.html"; id="tomain">Lee Eun Min</a>
+          </div>
+      </nav>
+    </header>
+  </div>
+  <div class="wrapper">
+    <hr>
+    <h1>REGISTER</h1>
+    <hr>
+    <form action="javascript:saveMember()" name="memberFrm">
+      <h3 class=" ">기본정보</h3>
+      <p><img src="image/categoryPainting.png" alt="필수"/> 필수입력사항</p>
+      <div class="join-table">
+        <table>
+        <tbody>
+          <tr>
+            <th scope="row">아이디 <img src="image/categoryPainting.png" alt="필수"/></th>
+            <td>
+              <input id="memberId" name="memberId" class="inputTypeText" maxlength="16" placeholder="아이디를 입력하세요." value="" type="text"/> 
+              <span id="idMsg">(영문소문자/숫자, 4~16자)</span> 
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">비밀번호 <img src="image/categoryPainting.png" alt="필수"/></th>
+            <td>
+              <input id="memberPwd" name="memberPwd" autocomplete="off" maxlength="16" value="" placeholder="비밀번호를 입력하세요." type="password"/>
+              <span>(영문 대소문자/숫자/특수문자(!@#$%^&*) 중 2가지 이상 조합, 8자~16자)</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">비밀번호 확인 <img src="image/categoryPainting.png" alt="필수"/></th>
+            <td><input id="checkPwd" name="checkPwd" autocomplete="off" maxlength="16" value="" type="password"/></td>
+          </tr>
+          <tr>
+            <th scope="row">이름 <img src="image/categoryPainting.png" alt="필수"/></th>
+            <td>
+              <input id="memberName" name="memberName" placeholder="한글이름 2~8자" value="" type="text"/>
+            </td>
+          </tr>
+          <!-- <tr>
+            <th scope="row">주소 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="필수"/></th>
+            <td>
+              <input id="postcode1" name="postcode1" class="inputTypeText" placeholder="" readonly="readonly" value="" type="text" />                    
+              <a href="#none" class="btnNormal" onclick="" id="postBtn">우편번호</a><br/>
+              <input id="addr1" name="addr1" class="inputTypeText" placeholder="" readonly="readonly" value="" type="text"  /> 기본주소<br/>
+              <input id="addr2" name="addr2" class="inputTypeText" placeholder="" value="" type="text"  /> 나머지주소                 
+            </td>
+          </tr> -->
+          <tr>
+            <th scope="row">휴대전화 <img src="image/categoryPainting.png" alt="필수"/></th>
+            <td>
+              <select id="mobile1" name="mobile1"><option value="010">010</option></select>
+              -
+              <input id="mobile2" name="mobile2" maxlength="4" value="" type="text" />
+              -
+              <input id="mobile3" name="mobile3" maxlength="4" value="" type="text" />
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">이메일 <img src="image/categoryPainting.png" alt="필수"/></th>
+            <td>
+              <input id="memberEmail" name="memberEmail" value="" type="email" />
+            </td>
+          </tr>
+        </tbody>
+        </table>
+      <div class="btnJoin">
+        <button id="btnJoinSubmit">회원가입</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

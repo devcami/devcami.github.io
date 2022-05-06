@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Cafe24SsurroundAir';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,p,h1,h2,h3,h4,dl,dt,dd{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Cafe24SsurroundAir', sans-serif;
+	color: #333;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+.header{
+	text-align: right;
+	padding: 10px;
+	font-family: 'Cafe24SsurroundAir', sans-serif;
+	font-size: 20px;
+	font-weight: 100;
+}
+
+.header button{
+	width: 100px;
+	height: 30px;
+	position: relative;
+	font-size: 15px;
+	font-family: 'Cafe24SsurroundAir', sans-serif;
+	cursor: pointer;
+	background-color: #fff;
+	border-radius: 10%;
+	border-style: none;
+	overflow: hidden;
+	transform: translate3d(0, 0, 0);
+}
+.wave {
+	position: absolute;
+	bottom: 3%;
+	left: 50%;
+	background: rgba(125, 201, 255, 0.3);
+	width: 300px;
+	height: 300px;
+	margin-left: -150px;
+	margin-bottom: -301px;
+	transform-origin: 50% 48%;
+	border-radius: 43%;
+	
+	transition-duration: 5s;
+	transition-property: margin-bottom;
+	transition-timing-function: ease;
+}
+
+button:hover .wave {
+margin-bottom: -250px;
+animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+from { transform: rotate(0deg); }
+from { transform: rotate(360deg); }
+}
